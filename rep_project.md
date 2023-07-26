@@ -172,15 +172,19 @@ GROUP BY 1;
 ![](images/16r.png)<!-- -->
 
 ###### *Now the data is ready to be visualized in Tableau*
-#### Below is the link to the Tableau Dashboard
-## [title](https://public.tableau.com/views/Sales_Rep_Dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+## [Link to Tableau Dashboard](https://public.tableau.com/views/Sales_Rep_Dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ![](images/17r.png)<!-- -->
 
 ## Final insights
-1. There is a direct correlation between account visits and cases sold
+1. There is a direct correlation between account visits and cases sold.
 2. I have performed better in every metric compared to last year
 3. There is a direct correlation between facing gained, POS, coolers placed and # of cases sold. 
-4. Have worst performing rep Brad do a route ride with Luca Toni so he can learn best practices. 
+4. August was my best month of sales
 5. June, July, August are the busiest months while the winter/holidays months are the slowest
 6. December was my worst perfroming month because I took a vacation.
+7. There was a 12.1% YOY increase in account visits which correalted to a 13.25% increase in cases sold.
+8. According to the forecast model in Tableau I am projected to hit $8k in monthly sales compared to $7.5k
+9. I sold $10 k more than last year and increased my daily visits by more than one stop a day!
+10. I sold a total of $86.86k compared to $76.69k pervious year and visited a 3011 accounts compared to 2686 last year
