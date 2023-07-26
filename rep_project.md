@@ -34,7 +34,7 @@ RENAME COLUMN cases_sold to cases_sold_dollars;
 ```
 SELECT * FROM rep;
 ```
-![](/1r.png)<!-- -->
+![](images/1r.png)<!-- -->
 
 #### Finding the name of the sales rep, region covered and manager
 ```
@@ -43,7 +43,7 @@ SELECT manager,CONCAT(first_name,' ',last_name) as full_name,
 FROM rep
 LIMIT 1;
 ```
-![](/2r.png)<!-- -->
+![](images/2r.png)<!-- -->
 
 ## STEPS
 #### 1. Finding total amount of accounts visited in 2021 vs 2022
@@ -53,7 +53,7 @@ FROM rep
 WHERE year IN('2021','2022')
 GROUP BY 1;
 ```
-![](/3r.png)<!-- -->
+![](images/3r.png)<!-- -->
 #### 2. Finding the total of cases sold and # of cases sold in 2021 and 2022
 ```
 SELECT year, SUM(cases_sold_dollars) as total_cases_$,
@@ -62,7 +62,7 @@ FROM rep
 WHERE year IN('2021','2022')
 GROUP BY 1;
 ```
-![](/4r.png)<!-- -->
+![](images/4r.png)<!-- -->
 #### 3. Finding the average of cases sold and # of cases sold in 2021 and 2022
 ```
 SELECT year, ROUND(AVG(cases_sold_dollars),2) as total_cases_$,
@@ -71,7 +71,7 @@ FROM rep
 WHERE year IN('2021','2022')
 GROUP BY 1;
 ```
-![](/5r.png)<!-- -->
+![](images/5r.png)<!-- -->
 
 #### 4. Finding the average daily visits in 2021 vs 2022
 ```
@@ -80,7 +80,7 @@ FROM rep
 WHERE year IN('2021','2022')
 GROUP BY 1;
 ```
-![](/6r.png)<!-- -->
+![](images/6r.png)<!-- -->
 #### 5. Finding the top month with the most cases sold
 ```
 SELECT year,month,
@@ -89,7 +89,7 @@ FROM rep
 ORDER BY 3 DESC
 LIMIT 1;
 ```
-![](/7r.png)<!-- -->
+![](images/7r.png)<!-- -->
 #### 6. Finding the top 5 month with the most cases sold
 ```
 SELECT year,month,
@@ -98,7 +98,7 @@ FROM rep
 ORDER BY 3 DESC
 LIMIT 5;
 ```
-![](/8r.png)<!-- -->
+![](images/8r.png)<!-- -->
 #### 7. Finding the bottom 5 months with the most cases sold in the most recent year
 ```
 SELECT year,month,num_cases,
@@ -108,7 +108,7 @@ WHERE year='2022'
 ORDER BY 3 ASC
 LIMIT 5;
 ```
-![](/9r.png)<!-- -->
+![](images/9r.png)<!-- -->
 #### 8. Finding the average monthly visits 2021 vs 2022
 ```
 SELECT year, ROUND(AVG(Account_Visits),2) as average_monthly
@@ -116,7 +116,7 @@ FROM rep
 WHERE year IN('2022','2021')
 GROUP BY 1;
 ```
-![](/10r.png)<!-- -->
+![](images/10r.png)<!-- -->
 #### 9. Comparing core skus and innovations sold between 2021 vs 2022
 ```
 SELECT year, SUM(core_skus) as total_skus,
@@ -125,7 +125,7 @@ FROM rep
 WHERE year IN('2022','2021')
 GROUP BY 1;
 ```
-![](/11r.png)<!-- -->
+![](images/11r.png)<!-- -->
 #### 10. Seeing if placing POS and Coolers has a correlation in the # of cases sold for the year 2022
 ```
 SELECT year, month,pos,coolers,num_cases
@@ -133,7 +133,7 @@ FROM rep
 WHERE year='2022'
 ORDER BY 5 DESC;
 ```
-![](/12r.png)<!-- -->
+![](images/12r.png)<!-- -->
 #### 11. Finding the average weekly visits 2021 vs 2022
 ```
 SELECT year, ROUND(SUM(Account_Visits)/52,2) as average_weekly
@@ -141,7 +141,7 @@ FROM rep
 WHERE year IN('2022','2021')
 GROUP BY 1
 ```
-![](/13r.png)<!-- -->
+![](images/13r.png)<!-- -->
 #### 12. Finding the total weekly visits by month in 2022 (There is excatly 4.34 weeks in a month)
 ```
 SELECT year, month,
@@ -151,7 +151,7 @@ WHERE year IN('2022')
 GROUP BY 1,2
 ORDER BY 3 DESC;
 ```
-![](/14r.png)<!-- -->
+![](images/14r.png)<!-- -->
 #### 13. Seeing if there is a correlation between # of facings gained in cold vault and # of cases sold.
 ```
 SELECT month,facing_gained,num_cases
@@ -159,7 +159,7 @@ FROM rep
 WHERE year='2022'
 ORDER BY 3 DESC;
 ```
-![](/15r.png)<!-- -->
+![](images/15r.png)<!-- -->
 #### 14. Seeing if there is a correlation between account visits and # of cases sold
 ```
 SELECT year,SUM(account_visits) as total_accounts,
@@ -169,17 +169,18 @@ FROM rep
 WHERE year IN('2021','2022')
 GROUP BY 1;
 ```
-![](/16r.png)<!-- -->
+![](images/16r.png)<!-- -->
 
-## Initial insights before providing final insights in Tableau
+###### *Now the data is ready to be visualized in Tableau*
+#### Below is the link to the Tableau Dashboard
+## [title](https://public.tableau.com/views/Sales_Rep_Dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+![](images/17r.png)<!-- -->
+
+## Final insights
 1. There is a direct correlation between account visits and cases sold
 2. I have performed better in every metric compared to last year
 3. There is a direct correlation between facing gained, POS, coolers placed and # of cases sold. 
 4. Have worst performing rep Brad do a route ride with Luca Toni so he can learn best practices. 
 5. June, July, August are the busiest months while the winter/holidays months are the slowest
 6. December was my worst perfroming month because I took a vacation.
-
-
-#### Now I will the data is ready to be visualized in Tableau
-#### Below is the link to the Tableau Dashboard
-## Tableau Link
