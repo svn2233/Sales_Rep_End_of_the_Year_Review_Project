@@ -8,17 +8,18 @@
 
 ## Objective
 ###### (*Please note that the names in the project are fictitious and are used only for the purpose of this project & the dataset is a mock dataset*)
-##### I am a sales rep named Tim Hart, who works for a beverage company covering Orlando, Florida. It is the end of the year performance review. I am tasked with presenting to senior leadership about my overall performance compared to the pervious year. They want to see if I increased market share in my area. They will need data driven insights from me to evaluate my performance and to see if I deserve a full merit increase in pay and if I’m ready for a promotion. To deliver data driven insights to my stakeholder I will answer questions like:
-	1.Did KPIs increase YOY like account visits, cases sold, facings gained?
-	2.How can I improve my performance as a sales rep for the upcoming year?
-	3. Is There any correlation between key metrics and cases sold?
-	4. Is there any trends?
+##### As Tim Hart, the sales rep for a beverage company covering Orlando, Florida, I will need to present data-driven insights to senior leadership during my upcoming end-of-year performance review. The purpose is to showcase my overall performance compared to the previous year and demonstrate whether I have increased market share in your area. This will help senior leadership assess my overall performance, eligibility for a full merit increase in pay and my readiness for a promotion. To accomplish this, I will need to answer questions like:
 	
+ 	1. What were the key metrics in which I outperformed last year?
+	2. What was the trend in sales performance over the months? Which month was the best for sales?
+	3. Is there any correlation between key metrics and cases sold?
+	4. How did my account visits impact sales performance?
+ 	5. How are facings gained, point of sale (POS) placements, and coolers placed related to the number of cases sold?
 
 ## Stakeholders
 
-    [] Joe Thompson - Regional Manager
-    [] John David - Director of Sales
+    1. John David - Director of Sales
+    2. Joe Thompson - Regional Manager
 
 #### I will examine the table to look for anything to fix/clean before I do my analysis
 ```
@@ -178,13 +179,13 @@ GROUP BY 1;
 ![](images/17r.png)<!-- -->
 
 ## Final insights
-1. There is a direct correlation between account visits and cases sold.
-2. I have performed better in every metric compared to last year
-3. There is a direct correlation between facing gained, POS, coolers placed and # of cases sold. 
-4. August was my best month of sales
-5. June, July, August are the busiest months while the winter/holidays months are the slowest
-6. December was my worst perfroming month because I took a vacation.
-7. There was a 12.1% YOY increase in account visits which correalted to a 13.25% increase in cases sold.
-8. According to the forecast model in Tableau I am projected to hit $8k in monthly sales compared to $7.5k
-9. I sold $10 k more than last year and increased my daily visits by more than one stop a day!
-10. I sold a total of $86.86k compared to $76.69k pervious year and visited a 3011 accounts compared to 2686 last year
+* There is a direct correlation between account visits and cases sold.
+* I have performed better in every metric compared to last year.
+* There is a direct correlation between facings gained, POS, coolers placed, and the number of cases sold.
+* August was my best month of sales.
+* June, July, and August are the busiest months, while the winter/holiday months are the slowest.
+* December was my worst-performing month because I took a vacation.
+* There was a 12.1% year-over-year (YOY) increase in account visits, which correlated to a 13.25% increase in cases sold.
+* According to the forecast model in Tableau, I am projected to hit $8k in monthly sales compared to $7.5k.
+* I sold $10k more than last year and increased my daily visits by more than one stop a day!
+* I sold a total of $86.86k compared to $76.69k the previous year and visited 3,011 accounts compared to 2,686 last year.
