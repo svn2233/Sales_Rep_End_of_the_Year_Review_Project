@@ -186,6 +186,6 @@ GROUP BY 1;
 * June, July, and August are the busiest months, while the winter/holiday months are the slowest.
 * December was my worst-performing month because I took a vacation.
 * There was a 12.1% year-over-year (YOY) increase in account visits, which correlated to a 13.25% increase in cases sold.
-* According to the forecast model in Tableau, I am projected to hit $8000 in monthly sales compared to $7500.
+* According to the forecast model in Tableau, I am projected to hit $8,000 in monthly sales comapred to $7500.
 * I sold $10,000 more than last year and increased my daily visits by more than one stop a day!
-* I sold a total of $86,860 compared to $76,690  the previous year and visited 3,011 accounts compared to 2,686 last year.
+* I sold a total of $86,860 compared to $76,690 the previous year and visited 3,011 accounts compared to 2,686 last year.
