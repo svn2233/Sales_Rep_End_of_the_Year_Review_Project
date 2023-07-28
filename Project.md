@@ -179,6 +179,7 @@ GROUP BY 1;
 ![](images/17r.png)<!-- -->
 
 ## Final insights
+```
 * There is a direct correlation between account visits and cases sold.
 * I have performed better in every metric compared to last year.
 * There is a direct correlation between facings gained, POS, coolers placed, and the number of cases sold.
@@ -189,3 +190,4 @@ GROUP BY 1;
 * According to the forecast model in Tableau, I am projected to hit $8,000 in monthly sales comapred to $7500.
 * I sold $10,000 more than last year and increased my daily visits by more than one stop a day!
 * I sold a total of $86,860 compared to $76,690 the previous year and visited 3,011 accounts compared to 2,686 last year.
+```
