@@ -1,14 +1,14 @@
 ## Rep Beverage Year End Performance review Project SQL—>Tableau
 
-##### By: Steven Nguyen
+By: Steven Nguyen
 
 ## Introduction
 
-##### In this project I will use MySQL to explore and analyze data and then visualize the data in Tableau to provide insights to the stakeholders.
+In this project I will use MySQL to explore and analyze data and then visualize the data in Tableau to provide insights to the stakeholders.
 
 ## Objective
-###### (*Please note that the names in the project are fictitious and are used only for the purpose of this project & the dataset is a mock dataset*)
-##### As Tim Hart, the sales rep for a beverage company covering Orlando, Florida, I will need to present data-driven insights to senior leadership during my upcoming end-of-year performance review. The purpose is to showcase my overall performance compared to the previous year and demonstrate whether I have increased market share in your area. This will help senior leadership assess my overall performance, eligibility for a full merit increase in pay and my readiness for a promotion. To accomplish this, I will need to answer questions like:
+###### (*Please note that the names in the project are fictitious and are used only for the purpose of this project & the dataset is a mock dataset created by me*)
+As Tim Hart, the sales rep for a beverage company covering Orlando, Florida, I will need to present data-driven insights to senior leadership during my upcoming end-of-year performance review. The purpose is to showcase my overall performance compared to the previous year and demonstrate whether I have increased market share in your area. This will help senior leadership assess my overall performance, eligibility for a full merit increase in pay and my readiness for a promotion. To accomplish this, I will need to answer questions like:
 	
  	1. What were the key metrics in which I outperformed last year?
 	2. What was the trend in sales performance over the months? Which month was the best for sales?
@@ -187,6 +187,6 @@ GROUP BY 1;
 * June, July, and August are the busiest months, while the winter/holiday months are the slowest.
 * December was my worst-performing month because I took a vacation.
 * There was a 12.1% year-over-year (YOY) increase in account visits, which correlated to a 13.25% increase in cases sold.
-* According to the forecast model in Tableau, I am projected to hit $8,000 in monthly sales comapred to $7500.
+* According to the forecast model in Tableau, I am projected to hit $8,000 in monthly sales compared to $7,500 of the current year.
 * I sold $10,000 more than last year and increased my daily visits by more than one stop a day!
 * I sold a total of $86,860 compared to $76,690 the previous year and visited 3,011 accounts compared to 2,686 last year.
